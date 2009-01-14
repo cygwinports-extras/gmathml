@@ -1,0 +1,11 @@
+--- origsrc/gmathml-0.0.1/src/Makefile.am	2008-12-17 15:15:12.000000000 -0600
++++ src/gmathml-0.0.1/src/Makefile.am	2009-01-13 15:34:58.562125000 -0600
+@@ -11,6 +11,8 @@ AM_CFLAGS =\
+ 
+ lib_LTLIBRARIES = libgmathml.la
+ 
++libgmathml_la_LDFLAGS = -no-undefined
++
+ libgmathml_la_LIBADD = 			\
+ 	../itex2mml/libitex2mml.la	\
+ 	$(GMATHML_LIBS)

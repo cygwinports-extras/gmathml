@@ -1,0 +1,21 @@
+--- origsrc/gmathml-0.0.1/Makefile.am	2008-09-18 15:41:03.000000000 -0500
++++ src/gmathml-0.0.1/Makefile.am	2009-01-13 15:39:55.062125000 -0600
+@@ -3,8 +3,7 @@
+ 
+ SUBDIRS = itex2mml src po
+ 
+-gmathmldocdir = ${prefix}/doc/gmathml
+-gmathmldoc_DATA = 	\
++EXTRA_DIST = 	\
+ 	README		\
+ 	COPYING		\
+ 	ChangeLog 	\
+@@ -12,8 +11,6 @@ gmathmldoc_DATA = 	\
+ 	INSTALL		\
+ 	NEWS
+ 
+-EXTRA_DIST = $(gmathmldoc_DATA)
+-
+ # Copy all the spec files. Of cource, only one is actually used.
+ dist-hook:
+ 	for specfile in *.spec; do \
